@@ -1,0 +1,221 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+import NavigationBar from '../components/NavigationBar.astro';
+import Footer from '../components/Footer.astro';
+
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+        <NavigationBar/>
+		<h1>搭配推荐<span class="text-gradient"></span></h1>
+		<p class="">
+			<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>今日女装搭配推荐</title>
+<style>
+  body, h2, p {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+  }
+  .outfit {
+    background: #f5f5f5;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  }
+  .outfit-image {
+    width: 100%;
+    display: block;
+  }
+  .outfit-content {
+    padding: 20px;
+  }
+  .outfit h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .outfit p {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+  @media (min-width: 768px) {
+    .outfit {
+      display: flex;
+    }
+    .outfit-image {
+      width: 40%;
+    }
+    .outfit-content {
+      width: 60%;
+      padding: 20px;
+    }
+  }
+</style>
+</head>
+<body>
+
+<div class="container">
+  <article class="outfit">
+    <figure class="outfit-image">
+      <img src="https://www.bing.com/th?id=OIP.VCzifzDJV8AykwpUV6fP6AHaJ1&w=150&h=200&c=8&rs=1&qlt=90&o=6&dpr=1.5&pid=3.1&rm=2" alt="超大西装外套搭配示例">
+    </figure>
+    <div class="outfit-content">
+      <h2>超大西装外套</h2>
+      <p>选择一件宽松的西装外套，搭配短款下装，打造下半身失踪风格。可以尝试不同颜色和材质的西装，如燕麦色、大地色系或动物纹，为造型增添力量感和时尚感。</p>
+    </div>
+  </article>
+  
+  <!DOCTYPE html>
+  <html lang="zh">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>今日女装搭配推荐</title>
+  <style>
+	body, h2, p {
+	  margin: 0;
+	  padding: 0;
+	  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	}
+	.container {
+	  width: 90%;
+	  max-width: 1200px;
+	  margin: auto;
+	  overflow: hidden;
+	}
+	.outfit {
+	  background: #f5f5f5;
+	  margin-bottom: 20px;
+	  border-radius: 10px;
+	  overflow: hidden;
+	  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+	}
+	.outfit-image {
+	  width: 100%;
+	  display: block;
+	}
+	.outfit-content {
+	  padding: 20px;
+	}
+	.outfit h2 {
+	  color: #333;
+	  font-size: 24px;
+	  margin-bottom: 10px;
+	}
+	.outfit p {
+	  color: #666;
+	  font-size: 16px;
+	  line-height: 1.6;
+	}
+	@media (min-width: 768px) {
+	  .outfit {
+		display: flex;
+	  }
+	  .outfit-image {
+		width: 40%;
+	  }
+	  .outfit-content {
+		width: 60%;
+		padding: 20px;
+	  }
+	}
+  </style>
+  </head>
+  <body>
+  
+  <div class="container">
+	<article class="outfit">
+	  <figure class="outfit-image">
+		<img src="https://th.bing.com/th/id/OIP.sGVHxDb8DqjLRxUEg3eHYwHaJ4?w=196&h=261&c=7&r=0&o=5&dpr=1.5&pid=1.7" alt="丹宁回潮搭配示例">
+	  </figure>
+	  <div class="outfit-content">
+		<h2>丹宁回潮</h2>
+		<p>2022年丹宁面料复古回潮,可以选择不同颜色的牛仔单品，或是拼接设计的牛仔裙，展现随性与硬朗的风格。</p>
+	  </div>
+	</article>
+	
+	<!-- 其他搭配文章以类似方式添加 -->
+	
+  </div>
+  
+  </body>
+  </html>
+  
+</div>
+
+</body>
+</html>
+		</p>
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: white;
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(rgba(var(--accent-dark), 66%), rgba(var(--accent-dark), 33%));
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>

@@ -8,7 +8,6 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<NavigationBar/>
 		<svg
 			class="astro-a"
 			width="495"
@@ -37,33 +36,78 @@ import Footer from '../components/Footer.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>欢迎来到“美丽省钱坊”<span class="text-gradient">——您的专属时尚购物指南</span></h1>
-		<p class="instructions">
-			在这个看脸的时代，我们深知每一位女性都渴望拥有时尚与美丽，但同时也希望精打细算。"美丽省钱坊"是专为追求时尚与实惠的女性打造的网购推荐平台，我们致力于为您提供最具性价比的女装、服饰搭配和化妆品。 <code>src/pages</code> <br />
-			<strong></strong> 
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="今日服饰推荐"
-				body="01/D家dimplehsu女装"
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="今日折扣"
-				body="Ssense 网站正在进行折扣季活动,女装服装低至5折。"
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="测评分享"
-				body="90斤今天踩雷了吗💥网红女装店铺测评今天是:KUOSE阔色"
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="社区"
-				body="《2021女性品质生活趋势洞察报告》发布,为自己而美 ❤️"
-			/>
-		</ul>
-	</main>
+        <NavigationBar />
+			<!DOCTYPE html>
+<html lang="zh">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>女性平价好物分享 - 新闻学学生团队</title>
+<style>
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f3e9e9;
+    color: #1c1b1b;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+  }
+  header {
+    background: #0c0c0c;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+  }
+  header h1 {
+    margin: 0;
+  }
+  .content {
+    padding: 20px 0;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .disclaimer {
+    background: #636161;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="container">
+    <h1>新闻学学生团队介绍</h1>
+  </div>
+</header>
+
+<div class="container content">
+  <h2>关于我们</h2>
+  <p>我们是一群对新闻学充满热情的学生，致力于探索和分享有价值的信息。本网页旨在介绍我们团队的工作，并分享我们对女性平价好物的发现。</p>
+  
+  <h3>平价好物分享</h3>
+  <p>在本页面，您将发现我们精心挑选的女性平价好物。我们相信，每个人都值得拥有高质量而价格合理的产品。</p>
+  
+</div>
+
+<div class="disclaimer">
+  <h3>免责声明</h3>
+  <p>本网页上的所有内容均为我们团队的观点和研究结果，不构成任何形式的购买建议。我们不对任何因使用本网页信息而造成的损失负责。</p>
+  <p>版权所有 &copy; 2023 新闻学学生团队。</p>
+</div>
+
+</body>
+</html>
+		</p>
+		
 </Layout>
 
 <style>
@@ -72,7 +116,7 @@ import Footer from '../components/Footer.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: rgb(15, 14, 14);
 		font-size: 20px;
 		line-height: 1.6;
 	}

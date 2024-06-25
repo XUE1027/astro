@@ -1,0 +1,135 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import NavigationBar from "../components/NavigationBar.astro";
+import Footer from "../components/Footer.astro";
+---
+
+<Layout title="Welcome to Astro.">
+	<main>
+		<NavigationBar />
+
+		<h1>平价好货分享<span class="text-gradient"></span></h1>
+		<div class="饰品店">
+			<h2>JPJ</h2>
+			<p class="价格区间">价格区间:60至350元</p>
+			<p class="描述">
+				适合大学生和初入职场的女性，提供钱包、单肩包、双肩包等多种款式。
+			</p>
+		</div>
+
+		<div class="饰品店">
+			<h2>KEVANCHO</h2>
+			<p class="价格区间">价格区间:100至300元</p>
+			<p class="描述">
+				以法式Vintage和时尚感兼容,提供腋下包、马鞍包、凯莉包等多种款式。
+			</p>
+		</div>
+		<div class="img">
+			<img
+				src="https://th.bing.com/th/id/OIP.CvRh6UL8_udnugP8zEDl8QHaEn?w=292&h=182&c=7&r=0&o=5&dpr=1.5&pid=1.7"
+				alt="超大西装外套搭配示例"
+			/>
+		</div>
+	</main>
+</Layout>
+
+<style>
+	main {
+		margin: auto;
+		padding: 1rem;
+		width: 800px;
+		max-width: calc(100% - 2rem);
+		color: rgb(109, 55, 55);
+		font-size: 20px;
+		line-height: 1.6;
+	}
+	.astro-a {
+		position: absolute;
+		top: -32px;
+		left: 50%;
+		transform: translatex(-50%);
+		width: 220px;
+		height: auto;
+		z-index: -1;
+	}
+	h1 {
+		font-size: 4rem;
+		font-weight: 700;
+		line-height: 1;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+	.text-gradient {
+		background-image: var(--accent-gradient);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-size: 400%;
+		background-position: 0%;
+	}
+	.instructions {
+		margin-bottom: 2rem;
+		border: 1px solid rgba(var(--accent-light), 25%);
+		background: linear-gradient(
+			rgba(var(--accent-dark), 66%),
+			rgba(var(--accent-dark), 33%)
+		);
+		padding: 1.5rem;
+		border-radius: 8px;
+	}
+	.instructions code {
+		font-size: 0.8em;
+		font-weight: bold;
+		background: rgba(var(--accent-light), 12%);
+		color: rgb(var(--accent-light));
+		border-radius: 4px;
+		padding: 0.3em 0.4em;
+	}
+	.instructions strong {
+		color: rgb(var(--accent-light));
+	}
+	.link-card-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+		gap: 2rem;
+		padding: 0;
+	}
+</style>
+<style>
+	body {
+		font-family: "Arial", sans-serif;
+		background-color: #e18fd4;
+		color: #635d5d;
+		line-height: 1.6;
+		padding: 20px;
+	}
+	h1 {
+		text-align: center;
+		margin-bottom: 20px;
+	}
+	饰品店 {
+		background: white;
+		border-radius: 8px;
+		box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+		margin-bottom: 20px;
+		padding: 20px;
+	}
+	饰品店 h2 {
+		color: #c70039;
+		margin-bottom: 10px;
+	}
+	饰品店 p {
+		margin: 0;
+		padding: 0;
+	}
+	饰品店 .价格区间 {
+		color: #555;
+		font-size: 16px;
+	}
+	饰品店 .描述 {
+		font-size: 14px;
+	}
+	.img {
+		text-align: center;
+	}
+</style>

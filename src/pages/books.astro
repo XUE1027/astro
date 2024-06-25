@@ -8,7 +8,6 @@ import Footer from '../components/Footer.astro';
 
 <Layout title="Welcome to Astro.">
 	<main>
-		<NavigationBar/>
 		<svg
 			class="astro-a"
 			width="495"
@@ -37,32 +36,73 @@ import Footer from '../components/Footer.astro';
 				</linearGradient>
 			</defs>
 		</svg>
-		<h1>欢迎来到“美丽省钱坊”<span class="text-gradient">——您的专属时尚购物指南</span></h1>
-		<p class="instructions">
-			在这个看脸的时代，我们深知每一位女性都渴望拥有时尚与美丽，但同时也希望精打细算。"美丽省钱坊"是专为追求时尚与实惠的女性打造的网购推荐平台，我们致力于为您提供最具性价比的女装、服饰搭配和化妆品。 <code>src/pages</code> <br />
-			<strong></strong> 
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="今日服饰推荐"
-				body="01/D家dimplehsu女装"
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="今日折扣"
-				body="Ssense 网站正在进行折扣季活动,女装服装低至5折。"
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="测评分享"
-				body="90斤今天踩雷了吗💥网红女装店铺测评今天是:KUOSE阔色"
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="社区"
-				body="《2021女性品质生活趋势洞察报告》发布,为自己而美 ❤️"
-			/>
-		</ul>
+        <NavigationBar />
+		<h1>今日女装推荐<span class="text-gradient"></span></h1>
+		<p class="">
+			<!DOCTYPE html>
+			<html lang="zh">
+			<head>
+			<meta charset="UTF-8">
+			<title>女装品牌推荐</title>
+			<style>
+			  table {
+				width: 100%;
+				border-collapse: collapse;
+			  }
+			  th, td {
+				border: 1px solid #9f85b9;
+				padding: 8px;
+				text-align: left;
+			  }
+			  th {
+				background-color: #574f5f;
+				color: #a39292;
+			  }
+			  tr:nth-child(even) {
+				background-color: #5a575c;
+			  }
+			  .category {
+				font-weight: bold;
+			  }
+			</style>
+			</head>
+			<body>
+			
+			<table>
+			  <tr>
+				<th>类别</th>
+				<th>品牌名称</th>
+				<th>特点描述</th>
+				<th>推荐风格或系列</th>
+			  </tr>
+			  <tr class="category">
+				<td>高性价比通勤女装</td>
+				<td colspan="3">
+				  <ul>
+					<li>Offiy有帆:实用性强，适合正装需求，设计师分享设计心得。</li>
+					<li>尚都比拉：简约气质风，职业套装设计感强，价格亲民。</li>
+					<li>红袖HopeShow:优雅复古轻奢风，适合正式场合，保持时尚感。</li>
+					<li>AMII:极简纯色单品，适合通勤穿着。</li>
+					<li>OVV:海澜之家旗下，材质优良，风格简洁大气。</li>
+				  </ul>
+				</td>
+			  </tr>
+			  <tr class="category">
+				<td>适合小个子女性品牌</td>
+				<td colspan="3">
+				  <ul>
+					<li>百图Betu:价格友好，适合刚入职场的女性。</li>
+					<li>范思蓝恩：职场宝藏品牌，设计年轻化，质量上乘。</li>
+				  </ul>
+				</td>
+			  </tr>
+			  <!-- Add more rows as needed -->
+			</table>
+			
+			</body>
+			</html>
+		</p>
+		
 	</main>
 </Layout>
 
@@ -72,7 +112,7 @@ import Footer from '../components/Footer.astro';
 		padding: 1rem;
 		width: 800px;
 		max-width: calc(100% - 2rem);
-		color: white;
+		color: rgb(214, 192, 192);
 		font-size: 20px;
 		line-height: 1.6;
 	}
